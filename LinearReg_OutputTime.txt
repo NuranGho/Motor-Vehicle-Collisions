@@ -1,0 +1,505 @@
+                               OLS Regression Results                               
+====================================================================================
+Dep. Variable:     NUMBER OF PERSONS KILLED   R-squared:                       0.000
+Model:                                  OLS   Adj. R-squared:                  0.000
+Method:                       Least Squares   F-statistic:                     1.817
+Date:                      Thu, 04 May 2023   Prob (F-statistic):              0.178
+Time:                              22:01:43   Log-Likelihood:            -8.1973e+05
+No. Observations:                    999999   AIC:                         1.639e+06
+Df Residuals:                        999997   BIC:                         1.639e+06
+Df Model:                                 1                                         
+Covariance Type:                  nonrobust                                         
+================================================================================================================================
+                                                                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------
+const                                                            0.0049      0.001      7.788      0.000       0.004       0.006
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattention/Distraction    -0.0017      0.001     -1.348      0.178      -0.004       0.001
+==============================================================================
+Omnibus:                  4749057.102   Durbin-Watson:                   2.000
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):   45259017832838.734
+Skew:                         181.048   Prob(JB):                         0.00
+Kurtosis:                   32958.825   Cond. No.                         2.49
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+                               OLS Regression Results                               
+====================================================================================
+Dep. Variable:     NUMBER OF PERSONS KILLED   R-squared:                       0.064
+Model:                                  OLS   Adj. R-squared:                  0.064
+Method:                       Least Squares   F-statistic:                     4873.
+Date:                      Thu, 04 May 2023   Prob (F-statistic):               0.00
+Time:                              22:01:53   Log-Likelihood:            -7.8673e+05
+No. Observations:                    999999   AIC:                         1.573e+06
+Df Residuals:                        999984   BIC:                         1.574e+06
+Df Model:                                14                                         
+Covariance Type:                  nonrobust                                         
+================================================================================================================================
+                                                                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------
+const                                                           -0.0454      0.002    -28.060      0.000      -0.049      -0.042
+CRASH TIME                                                      -0.0008   9.09e-05     -8.365      0.000      -0.001      -0.001
+NUMBER OF PERSONS INJURED                                        0.1715      0.001    261.129      0.000       0.170       0.173
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattention/Distraction     0.0016      0.001      1.122      0.262      -0.001       0.005
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                        0.0182      0.001     12.185      0.000       0.015       0.021
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Closely             -0.0074      0.002     -3.578      0.000      -0.011      -0.003
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield Right-of-Way     -0.0309      0.002    -13.660      0.000      -0.035      -0.026
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane Usage Improper     0.0252      0.003      9.268      0.000       0.020       0.030
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                   0.0348      0.003     12.632      0.000       0.029       0.040
+VEHICLE TYPE CODE 1_SEDAN                                        0.0057      0.201      0.028      0.977      -0.388       0.399
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility Vehicle          0.0014      0.001      1.274      0.203      -0.001       0.004
+VEHICLE TYPE CODE 1_TLC                                          0.0518      0.376      0.138      0.890      -0.685       0.788
+VEHICLE TYPE CODE 1_Pick-up Truck                                0.0151      0.003      4.599      0.000       0.009       0.022
+VEHICLE TYPE CODE 1_BOX TRUCK                                   -0.0153      0.122     -0.125      0.900      -0.254       0.224
+VEHICLE TYPE CODE 1_Bike                                        -0.0854      0.005    -16.471      0.000      -0.096      -0.075
+==============================================================================
+Omnibus:                  4641835.820   Durbin-Watson:                   1.998
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):   37870176368120.484
+Skew:                         167.348   Prob(JB):                         0.00
+Kurtosis:                   30148.864   Cond. No.                     1.04e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.04e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+                                                    COLLISION_ID  CRASH TIME  \
+COLLISION_ID                                            1.000000   -0.013838   
+CRASH TIME                                             -0.013838    1.000000   
+NUMBER OF PERSONS INJURED                               0.090485    0.024034   
+NUMBER OF PERSONS KILLED                                0.000389   -0.002784   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...      0.011453    0.011598   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified               0.032991    0.001765   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...     -0.041513    0.019310   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...     -0.003992    0.029146   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...     -0.007057    0.009128   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely         -0.029631    0.000267   
+VEHICLE TYPE CODE 1_SEDAN                              -0.003143   -0.001202   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...      0.016840    0.013865   
+VEHICLE TYPE CODE 1_TLC                                -0.000061   -0.000964   
+VEHICLE TYPE CODE 1_Pick-up Truck                      -0.017436   -0.015213   
+VEHICLE TYPE CODE 1_BOX TRUCK                           0.004186   -0.001667   
+VEHICLE TYPE CODE 1_Bike                                0.016590    0.023942   
+predicted1                                             -0.011453   -0.011598   
+predicted2                                              0.091319   -0.011015   
+
+                                                    NUMBER OF PERSONS INJURED  \
+COLLISION_ID                                                         0.090485   
+CRASH TIME                                                           0.024034   
+NUMBER OF PERSONS INJURED                                            1.000000   
+NUMBER OF PERSONS KILLED                                             0.250633   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                   0.006873   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                           -0.042475   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                   0.015463   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                   0.065886   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                  -0.038068   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                      -0.053651   
+VEHICLE TYPE CODE 1_SEDAN                                           -0.000127   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                  -0.008403   
+VEHICLE TYPE CODE 1_TLC                                             -0.000563   
+VEHICLE TYPE CODE 1_Pick-up Truck                                   -0.018183   
+VEHICLE TYPE CODE 1_BOX TRUCK                                        0.000233   
+VEHICLE TYPE CODE 1_Bike                                             0.071863   
+predicted1                                                          -0.006873   
+predicted2                                                           0.991744   
+
+                                                    NUMBER OF PERSONS KILLED  \
+COLLISION_ID                                                        0.000389   
+CRASH TIME                                                         -0.002784   
+NUMBER OF PERSONS INJURED                                           0.250633   
+NUMBER OF PERSONS KILLED                                            1.000000   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                 -0.001348   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                           0.002851   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                 -0.002486   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                 -0.001254   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                 -0.001593   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                     -0.001574   
+VEHICLE TYPE CODE 1_SEDAN                                          -0.000022   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                 -0.000680   
+VEHICLE TYPE CODE 1_TLC                                            -0.000012   
+VEHICLE TYPE CODE 1_Pick-up Truck                                   0.000238   
+VEHICLE TYPE CODE 1_BOX TRUCK                                      -0.000036   
+VEHICLE TYPE CODE 1_Bike                                            0.001490   
+predicted1                                                          0.001348   
+predicted2                                                          0.252720   
+
+                                                    CONTRIBUTING FACTOR VEHICLE 1_Driver Inattention/Distraction  \
+COLLISION_ID                                                                                 0.011453              
+CRASH TIME                                                                                   0.011598              
+NUMBER OF PERSONS INJURED                                                                    0.006873              
+NUMBER OF PERSONS KILLED                                                                    -0.001348              
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                           1.000000              
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                                   -0.313226              
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                          -0.176229              
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                          -0.155789              
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                          -0.123523              
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                              -0.121759              
+VEHICLE TYPE CODE 1_SEDAN                                                                   -0.001515              
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                           0.010010              
+VEHICLE TYPE CODE 1_TLC                                                                      0.000830              
+VEHICLE TYPE CODE 1_Pick-up Truck                                                            0.000608              
+VEHICLE TYPE CODE 1_BOX TRUCK                                                               -0.000368              
+VEHICLE TYPE CODE 1_Bike                                                                     0.005507              
+predicted1                                                                                  -1.000000              
+predicted2                                                                                  -0.005333              
+
+                                                    CONTRIBUTING FACTOR VEHICLE 1_Unspecified  \
+COLLISION_ID                                                                         0.032991   
+CRASH TIME                                                                           0.001765   
+NUMBER OF PERSONS INJURED                                                           -0.042475   
+NUMBER OF PERSONS KILLED                                                             0.002851   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                  -0.313226   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                            1.000000   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                  -0.168387   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                  -0.148857   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                  -0.118027   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                      -0.116341   
+VEHICLE TYPE CODE 1_SEDAN                                                            0.001246   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                  -0.012956   
+VEHICLE TYPE CODE 1_TLC                                                             -0.000774   
+VEHICLE TYPE CODE 1_Pick-up Truck                                                   -0.006925   
+VEHICLE TYPE CODE 1_BOX TRUCK                                                        0.000340   
+VEHICLE TYPE CODE 1_Bike                                                             0.000118   
+predicted1                                                                           0.313226   
+predicted2                                                                           0.011280   
+
+                                                    CONTRIBUTING FACTOR VEHICLE 1_Following Too Closely  \
+COLLISION_ID                                                                                -0.041513     
+CRASH TIME                                                                                   0.019310     
+NUMBER OF PERSONS INJURED                                                                    0.015463     
+NUMBER OF PERSONS KILLED                                                                    -0.002486     
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                          -0.176229     
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                                   -0.168387     
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                           1.000000     
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                          -0.083750     
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                          -0.066405     
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                              -0.065456     
+VEHICLE TYPE CODE 1_SEDAN                                                                   -0.000814     
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                           0.028323     
+VEHICLE TYPE CODE 1_TLC                                                                     -0.000435     
+VEHICLE TYPE CODE 1_Pick-up Truck                                                            0.000952     
+VEHICLE TYPE CODE 1_BOX TRUCK                                                               -0.000526     
+VEHICLE TYPE CODE 1_Bike                                                                    -0.021331     
+predicted1                                                                                   0.176229     
+predicted2                                                                                  -0.009836     
+
+                                                    CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield Right-of-Way  \
+COLLISION_ID                                                                                -0.003992             
+CRASH TIME                                                                                   0.029146             
+NUMBER OF PERSONS INJURED                                                                    0.065886             
+NUMBER OF PERSONS KILLED                                                                    -0.001254             
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                          -0.155789             
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                                   -0.148857             
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                          -0.083750             
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                           1.000000             
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                          -0.058703             
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                              -0.057864             
+VEHICLE TYPE CODE 1_SEDAN                                                                    0.002264             
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                           0.011501             
+VEHICLE TYPE CODE 1_TLC                                                                     -0.000385             
+VEHICLE TYPE CODE 1_Pick-up Truck                                                           -0.004397             
+VEHICLE TYPE CODE 1_BOX TRUCK                                                               -0.001186             
+VEHICLE TYPE CODE 1_Bike                                                                     0.016122             
+predicted1                                                                                   0.155789             
+predicted2                                                                                  -0.004964             
+
+                                                    CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane Usage Improper  \
+COLLISION_ID                                                                                -0.007057              
+CRASH TIME                                                                                   0.009128              
+NUMBER OF PERSONS INJURED                                                                   -0.038068              
+NUMBER OF PERSONS KILLED                                                                    -0.001593              
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                          -0.123523              
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                                   -0.118027              
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                          -0.066405              
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                          -0.058703              
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                           1.000000              
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                              -0.045880              
+VEHICLE TYPE CODE 1_SEDAN                                                                   -0.000571              
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                          -0.002222              
+VEHICLE TYPE CODE 1_TLC                                                                     -0.000305              
+VEHICLE TYPE CODE 1_Pick-up Truck                                                            0.004344              
+VEHICLE TYPE CODE 1_BOX TRUCK                                                                0.000172              
+VEHICLE TYPE CODE 1_Bike                                                                    -0.001504              
+predicted1                                                                                   0.123523              
+predicted2                                                                                  -0.006303              
+
+                                                    CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely  \
+COLLISION_ID                                                                             -0.029631   
+CRASH TIME                                                                                0.000267   
+NUMBER OF PERSONS INJURED                                                                -0.053651   
+NUMBER OF PERSONS KILLED                                                                 -0.001574   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                       -0.121759   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                                -0.116341   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                       -0.065456   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                       -0.057864   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                       -0.045880   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                            1.000000   
+VEHICLE TYPE CODE 1_SEDAN                                                                -0.000563   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                        0.008134   
+VEHICLE TYPE CODE 1_TLC                                                                  -0.000301   
+VEHICLE TYPE CODE 1_Pick-up Truck                                                         0.009910   
+VEHICLE TYPE CODE 1_BOX TRUCK                                                            -0.000927   
+VEHICLE TYPE CODE 1_Bike                                                                 -0.019332   
+predicted1                                                                                0.121759   
+predicted2                                                                               -0.006229   
+
+                                                    VEHICLE TYPE CODE 1_SEDAN  \
+COLLISION_ID                                                        -0.003143   
+CRASH TIME                                                          -0.001202   
+NUMBER OF PERSONS INJURED                                           -0.000127   
+NUMBER OF PERSONS KILLED                                            -0.000022   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                  -0.001515   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                            0.001246   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                  -0.000814   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                   0.002264   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                  -0.000571   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                      -0.000563   
+VEHICLE TYPE CODE 1_SEDAN                                            1.000000   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                  -0.001959   
+VEHICLE TYPE CODE 1_TLC                                             -0.000004   
+VEHICLE TYPE CODE 1_Pick-up Truck                                   -0.000444   
+VEHICLE TYPE CODE 1_BOX TRUCK                                       -0.000012   
+VEHICLE TYPE CODE 1_Bike                                            -0.000276   
+predicted1                                                           0.001515   
+predicted2                                                          -0.000086   
+
+                                                    VEHICLE TYPE CODE 1_Station Wagon/Sport Utility Vehicle  \
+COLLISION_ID                                                                                 0.016840         
+CRASH TIME                                                                                   0.013865         
+NUMBER OF PERSONS INJURED                                                                   -0.008403         
+NUMBER OF PERSONS KILLED                                                                    -0.000680         
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                                           0.010010         
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                                   -0.012956         
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                                           0.028323         
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                                           0.011501         
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                                          -0.002222         
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                                               0.008134         
+VEHICLE TYPE CODE 1_SEDAN                                                                   -0.001959         
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                                           1.000000         
+VEHICLE TYPE CODE 1_TLC                                                                     -0.001047         
+VEHICLE TYPE CODE 1_Pick-up Truck                                                           -0.124407         
+VEHICLE TYPE CODE 1_BOX TRUCK                                                               -0.003228         
+VEHICLE TYPE CODE 1_Bike                                                                    -0.077270         
+predicted1                                                                                  -0.010010         
+predicted2                                                                                  -0.002690         
+
+                                                    VEHICLE TYPE CODE 1_TLC  \
+COLLISION_ID                                                      -0.000061   
+CRASH TIME                                                        -0.000964   
+NUMBER OF PERSONS INJURED                                         -0.000563   
+NUMBER OF PERSONS KILLED                                          -0.000012   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                 0.000830   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                         -0.000774   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                -0.000435   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                -0.000385   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                -0.000305   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                    -0.000301   
+VEHICLE TYPE CODE 1_SEDAN                                         -0.000004   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                -0.001047   
+VEHICLE TYPE CODE 1_TLC                                            1.000000   
+VEHICLE TYPE CODE 1_Pick-up Truck                                 -0.000238   
+VEHICLE TYPE CODE 1_BOX TRUCK                                     -0.000006   
+VEHICLE TYPE CODE 1_Bike                                          -0.000148   
+predicted1                                                        -0.000830   
+predicted2                                                        -0.000046   
+
+                                                    VEHICLE TYPE CODE 1_Pick-up Truck  \
+COLLISION_ID                                                                -0.017436   
+CRASH TIME                                                                  -0.015213   
+NUMBER OF PERSONS INJURED                                                   -0.018183   
+NUMBER OF PERSONS KILLED                                                     0.000238   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                           0.000608   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                   -0.006925   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                           0.000952   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                          -0.004397   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                           0.004344   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                               0.009910   
+VEHICLE TYPE CODE 1_SEDAN                                                   -0.000444   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                          -0.124407   
+VEHICLE TYPE CODE 1_TLC                                                     -0.000238   
+VEHICLE TYPE CODE 1_Pick-up Truck                                            1.000000   
+VEHICLE TYPE CODE 1_BOX TRUCK                                               -0.000732   
+VEHICLE TYPE CODE 1_Bike                                                    -0.017529   
+predicted1                                                                  -0.000608   
+predicted2                                                                   0.000941   
+
+                                                    VEHICLE TYPE CODE 1_BOX TRUCK  \
+COLLISION_ID                                                             0.004186   
+CRASH TIME                                                              -0.001667   
+NUMBER OF PERSONS INJURED                                                0.000233   
+NUMBER OF PERSONS KILLED                                                -0.000036   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                      -0.000368   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                                0.000340   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                      -0.000526   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                      -0.001186   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                       0.000172   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                          -0.000927   
+VEHICLE TYPE CODE 1_SEDAN                                               -0.000012   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                      -0.003228   
+VEHICLE TYPE CODE 1_TLC                                                 -0.000006   
+VEHICLE TYPE CODE 1_Pick-up Truck                                       -0.000732   
+VEHICLE TYPE CODE 1_BOX TRUCK                                            1.000000   
+VEHICLE TYPE CODE 1_Bike                                                -0.000455   
+predicted1                                                               0.000368   
+predicted2                                                              -0.000141   
+
+                                                    VEHICLE TYPE CODE 1_Bike  \
+COLLISION_ID                                                        0.016590   
+CRASH TIME                                                          0.023942   
+NUMBER OF PERSONS INJURED                                           0.071863   
+NUMBER OF PERSONS KILLED                                            0.001490   
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...                  0.005507   
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified                           0.000118   
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...                 -0.021331   
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...                  0.016122   
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...                 -0.001504   
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely                     -0.019332   
+VEHICLE TYPE CODE 1_SEDAN                                          -0.000276   
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...                 -0.077270   
+VEHICLE TYPE CODE 1_TLC                                            -0.000148   
+VEHICLE TYPE CODE 1_Pick-up Truck                                  -0.017529   
+VEHICLE TYPE CODE 1_BOX TRUCK                                      -0.000455   
+VEHICLE TYPE CODE 1_Bike                                            1.000000   
+predicted1                                                         -0.005507   
+predicted2                                                          0.005897   
+
+                                                    predicted1  predicted2  
+COLLISION_ID                                         -0.011453    0.091319  
+CRASH TIME                                           -0.011598   -0.011015  
+NUMBER OF PERSONS INJURED                            -0.006873    0.991744  
+NUMBER OF PERSONS KILLED                              0.001348    0.252720  
+CONTRIBUTING FACTOR VEHICLE 1_Driver Inattentio...   -1.000000   -0.005333  
+CONTRIBUTING FACTOR VEHICLE 1_Unspecified             0.313226    0.011280  
+CONTRIBUTING FACTOR VEHICLE 1_Following Too Clo...    0.176229   -0.009836  
+CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield ...    0.155789   -0.004964  
+CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane U...    0.123523   -0.006303  
+CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely        0.121759   -0.006229  
+VEHICLE TYPE CODE 1_SEDAN                             0.001515   -0.000086  
+VEHICLE TYPE CODE 1_Station Wagon/Sport Utility...   -0.010010   -0.002690  
+VEHICLE TYPE CODE 1_TLC                              -0.000830   -0.000046  
+VEHICLE TYPE CODE 1_Pick-up Truck                    -0.000608    0.000941  
+VEHICLE TYPE CODE 1_BOX TRUCK                         0.000368   -0.000141  
+VEHICLE TYPE CODE 1_Bike                             -0.005507    0.005897  
+predicted1                                            1.000000    0.005333  
+predicted2                                            0.005333    1.000000  
+[('Lagrange multiplier statistic', 40360.5380216096), ('p-value', 0.0), ('f-value', 3004.0995237932293), ('f p-value', 0.0)]
+       COLLISION_ID     CRASH TIME  NUMBER OF PERSONS INJURED  \
+count  9.999990e+05  999999.000000              999999.000000   
+mean   4.060094e+06      13.494533                   0.324895   
+std    2.898265e+05       5.859594                   0.815747   
+min    3.405265e+06       0.000000                   0.000000   
+25%    3.809008e+06       9.500000                   0.000000   
+50%    4.061111e+06      14.180000                   0.000000   
+75%    4.311228e+06      17.930000                   0.000000   
+max    4.592158e+06      23.980000                 100.000000   
+
+       NUMBER OF PERSONS KILLED  \
+count             999999.000000   
+mean                   0.004505   
+std                    0.549248   
+min                    0.000000   
+25%                    0.000000   
+50%                    0.000000   
+75%                    0.000000   
+max                  100.000000   
+
+       CONTRIBUTING FACTOR VEHICLE 1_Driver Inattention/Distraction  \
+count                                      999999.000000              
+mean                                            0.246881              
+std                                             0.431197              
+min                                             0.000000              
+25%                                             0.000000              
+50%                                             0.000000              
+75%                                             0.000000              
+max                                             1.000000              
+
+       CONTRIBUTING FACTOR VEHICLE 1_Unspecified  \
+count                              999999.000000   
+mean                                    0.230348   
+std                                     0.421056   
+min                                     0.000000   
+25%                                     0.000000   
+50%                                     0.000000   
+75%                                     0.000000   
+max                                     1.000000   
+
+       CONTRIBUTING FACTOR VEHICLE 1_Following Too Closely  \
+count                                       999999.00000     
+mean                                             0.08654     
+std                                              0.28116     
+min                                              0.00000     
+25%                                              0.00000     
+50%                                              0.00000     
+75%                                              0.00000     
+max                                              1.00000     
+
+       CONTRIBUTING FACTOR VEHICLE 1_Failure to Yield Right-of-Way  \
+count                                      999999.000000             
+mean                                            0.068933             
+std                                             0.253340             
+min                                             0.000000             
+25%                                             0.000000             
+50%                                             0.000000             
+75%                                             0.000000             
+max                                             1.000000             
+
+       CONTRIBUTING FACTOR VEHICLE 1_Passing or Lane Usage Improper  \
+count                                      999999.000000              
+mean                                            0.044475              
+std                                             0.206148              
+min                                             0.000000              
+25%                                             0.000000              
+50%                                             0.000000              
+75%                                             0.000000              
+max                                             1.000000              
+
+       CONTRIBUTING FACTOR VEHICLE 1_Backing Unsafely  \
+count                                   999999.000000   
+mean                                         0.043268   
+std                                          0.203460   
+min                                          0.000000   
+25%                                          0.000000   
+50%                                          0.000000   
+75%                                          0.000000   
+max                                          1.000000   
+
+       VEHICLE TYPE CODE 1_SEDAN  \
+count              999999.000000   
+mean                    0.000007   
+std                     0.002646   
+min                     0.000000   
+25%                     0.000000   
+50%                     0.000000   
+75%                     0.000000   
+max                     1.000000   
+
+       VEHICLE TYPE CODE 1_Station Wagon/Sport Utility Vehicle  \
+count                                      999999.000000         
+mean                                            0.354177         
+std                                             0.478264         
+min                                             0.000000         
+25%                                             0.000000         
+50%                                             0.000000         
+75%                                             1.000000         
+max                                             1.000000         
+
+       VEHICLE TYPE CODE 1_TLC  VEHICLE TYPE CODE 1_Pick-up Truck  \
+count            999999.000000                      999999.000000   
+mean                  0.000002                           0.027447   
+std                   0.001414                           0.163382   
+min                   0.000000                           0.000000   
+25%                   0.000000                           0.000000   
+50%                   0.000000                           0.000000   
+75%                   0.000000                           0.000000   
+max                   1.000000                           1.000000   
+
+       VEHICLE TYPE CODE 1_BOX TRUCK  VEHICLE TYPE CODE 1_Bike     predicted1  
+count                  999999.000000             999999.000000  999999.000000  
+mean                        0.000019                  0.010770       0.004505  
+std                         0.004359                  0.103218       0.000740  
+min                         0.000000                  0.000000       0.003212  
+25%                         0.000000                  0.000000       0.004929  
+50%                         0.000000                  0.000000       0.004929  
+75%                         0.000000                  0.000000       0.004929  
+max                         1.000000                  1.000000       0.004929  
+ShapiroResult(statistic=0.04241710901260376, pvalue=0.0)
